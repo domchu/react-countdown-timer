@@ -4,7 +4,7 @@ import "./App.css";
 const App = () => {
   return (
     <section className="timer-container">
-      <div className="timer">
+      <section className="timer">
         <div>
           <span className="mdi mdi-calendar-clock timer-icon"></span>
           <h2>CountDown Timer</h2>
@@ -42,7 +42,7 @@ const App = () => {
             </p>
           </section>
         </div>
-      </div>
+      </section>
     </section>
   );
 };
