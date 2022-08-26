@@ -10,11 +10,11 @@ const App = () => {
   let interval = useRef();
 
   const starterTimer = () => {
-    const countDownDate = new Date("july 09, 2023 00:00:00").getTime();
+    const countDownDate = new Date("july 09, 2023 00:00:00").getTime(); //the countdown date
 
     interval = setInterval(() => {
-      const now = new Date().getTime();
-      const distance = countDownDate - now;
+      const now = new Date().getTime(); //the current time
+      const distance = countDownDate - now; //the distance between the countdown date and the current
       const days = Math.floor(distance / (1000 * 24 * 60 * 60));
       const hours = Math.floor(
         (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
