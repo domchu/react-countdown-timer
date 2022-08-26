@@ -49,7 +49,7 @@ const App = () => {
         <div>
           <span className="mdi mdi-calendar-clock timer-icon"></span>
           <h2>CountDown Timer</h2>
-          <p>
+          <p style={{ fontSize: "1.5em" }}>
             Countdown to a really special date. One you could or would ever
             imagine!
           </p>
