@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "./App.css";
 
 const App = () => {
@@ -34,6 +34,14 @@ const App = () => {
       }
     }, 1000);
   };
+
+  //componentDidMount
+  useEffect(() => {
+    starterTimer();
+    return () => {
+      clearInterval(interval.current);
+    };
+  });
 
   return (
     <section className="timer-container">
