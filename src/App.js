@@ -23,7 +23,7 @@ const App = () => {
       const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
       if (distance < 0) {
-        //stop the timer
+        //stop the timer and clearing the distance
         clearInterval(interval.current);
       } else {
         //undate the timer
@@ -35,7 +35,7 @@ const App = () => {
     }, 1000);
   };
 
-  //componentDidMount
+  //componentDidMount and calling the startertimer function
   useEffect(() => {
     starterTimer();
     return () => {
