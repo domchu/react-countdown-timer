@@ -1,7 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import "./App.css";
 
 const App = () => {
+  const [timerDays, setTimerDays] = useState("00");
+  const [timerHours, setTimerHours] = useState("00");
+  const [timerMinutes, setTimerMinutes] = useState("00");
+  const [timerSeconds, setTimerSeconds] = useState("00");
   return (
     <section className="timer-container">
       <section className="timer">
@@ -15,28 +19,28 @@ const App = () => {
         </div>
         <div>
           <section>
-            <p>87</p>
+            <p>{timerDays}</p>
             <p>
               <small>Days</small>
             </p>
           </section>
           <span>:</span>
           <section>
-            <p>87</p>
+            <p>{timerHours}</p>
             <p>
               <small>Hours</small>
             </p>
           </section>
           <span>:</span>
           <section>
-            <p>87</p>
+            <p>{timerMinutes}</p>
             <p>
               <small>Minutes</small>
             </p>
           </section>
           <span>:</span>
           <section>
-            <p>87</p>
+            <p>{timerSeconds}</p>
             <p>
               <small>Seconds</small>
             </p>
