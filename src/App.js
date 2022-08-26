@@ -24,6 +24,7 @@ const App = () => {
 
       if (distance < 0) {
         //stop the timer
+        clearInterval(interval.current);
       } else {
         //undate the timer
         setTimerDays(days);
