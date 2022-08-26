@@ -21,6 +21,16 @@ const App = () => {
       );
       const minutes = Math.floor((distance % (1000 * 60)) / (1000 * 60));
       const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      if (distance < 0) {
+        //stop the timer
+      } else {
+        //undate the timer
+        setTimerDays(days);
+        setTimerHours(hours);
+        setTimerMinutes(minutes);
+        setTimerSeconds(seconds);
+      }
     }, 1000);
   };
 
